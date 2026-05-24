@@ -1,2 +1,5 @@
 .vscode
 .torrent*
+file.txt
+main.go.bak
+torrent_cli
