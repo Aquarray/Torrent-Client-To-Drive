@@ -79,31 +79,31 @@ After a download finishes, upload the completed files to Google Drive:
 Upload an existing file or folder without downloading:
 
 ```bash
-./torrent_cli --upload-only --upload-path ./Downloads/MyFolder --gdrive-upload
+./torrent_cli --upload-only --upload-path /path/to/folder --gdrive-upload
 ```
 
 Use a specific OAuth credentials file:
 
 ```bash
-./torrent_cli --upload-only --upload-path ./Downloads/MyFolder --gdrive-upload --gdrive-credentials ./credentials.json
+./torrent_cli --upload-only --upload-path /path/to/folder --gdrive-upload --gdrive-credentials ./credentials.json
 ```
 
 Target a specific Google Drive folder:
 
 ```bash
-./torrent_cli --upload-only --upload-path ./Downloads/MyFolder --gdrive-upload --gdrive-parent-id YOUR_FOLDER_ID
+./torrent_cli --upload-only --upload-path /path/to/folder --gdrive-upload --gdrive-parent-id YOUR_FOLDER_ID
 ```
 
 Print reusable auth values after login:
 
 ```bash
-./torrent_cli --upload-only --upload-path ./Downloads/MyFolder --gdrive-upload --gdrive-print-auth
+./torrent_cli --upload-only --upload-path /path/to/folder --gdrive-upload --gdrive-print-auth
 ```
 
 Reuse printed auth values directly:
 
 ```bash
-./torrent_cli --upload-only --upload-path ./Downloads/MyFolder --gdrive-upload \
+./torrent_cli --upload-only --upload-path /path/to/folder --gdrive-upload \
   --gdrive-client-id "YOUR_CLIENT_ID" \
   --gdrive-client-secret "YOUR_CLIENT_SECRET" \
   --gdrive-token '{"access_token":"...","refresh_token":"..."}'
